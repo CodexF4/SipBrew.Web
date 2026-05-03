@@ -1,0 +1,25 @@
+<mat-toolbar color="primary" class="topbar">
+
+  <!-- Will make this clickable -->
+  <span class="logo">SipBrew</span>
+
+  <a mat-button routerLink="/dashboard">
+    Home
+  </a>
+
+  <!-- <span class="spacer"></span> -->
+
+  <!-- Admin links -->
+  @if (auth.isAdmin) {
+    <a mat-button (click)="product()">Products</a>
+    <!-- <a mat-button routerLink="/admin/products">Product</a> -->
+    <a mat-button routerLink="/admin/inventory">Inventory</a>
+    <a mat-button routerLink="/admin/orders">Orders</a>
+    <a mat-button routerLink="/admin/order-history">History </a>
+
+    <button mat-button (click)="auth.logout()">
+      Logout
+    </button>
+  }
+
+</mat-toolbar>

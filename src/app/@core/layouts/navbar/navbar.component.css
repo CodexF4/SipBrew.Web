@@ -1,0 +1,20 @@
+.topbar {
+  display: flex;
+  background: #007bff;
+  color: white;
+  padding: 1rem;
+  gap: 1rem;
+  align-items: center;
+}
+a {
+  color: white;
+  text-decoration: none;
+}
+button {
+  margin-left: auto;
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+  padding: 0.25rem 0.5rem;
+}
